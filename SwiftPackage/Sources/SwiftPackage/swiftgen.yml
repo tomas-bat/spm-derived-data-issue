@@ -1,0 +1,12 @@
+input_dir: Resources
+output_dir: ${DERIVED_SOURCES_DIR}
+
+xcassets:
+  inputs:
+    - Assets.xcassets
+  outputs:
+    - templatePath: swiftgen-xcassets.stencil
+      output: Assets.generated.swift
+      params:
+        publicAccess: true
+
